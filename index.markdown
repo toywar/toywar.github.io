@@ -39,14 +39,14 @@ LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://w
 - Created high availability solution for logs delivery from whole company's services and servers: **Elasticsearch + Graylog + Fluentd** with **HAProxy** load balancing
 - Created on-premise **Kubernetes** cluster on bare-metal servers for part of company's software
 - Transfered applications CI/CD pipelines from Jenkins to Gitlab CI base
-- Maintenanced **Linux**-based servers (Ubuntu/Debian) using IaC instruments (**Chef**)
-- Created custom sollution for HR department: automized process for hiring/leaving, integrations with **BambooHR** and **Google Workspaces**
+- Supported **Linux**-based servers (Ubuntu/Debian) using IaC instruments (**Chef**)
+- Created custom solution for HR department: automated process for hiring/leaving, integrations with **BambooHR** and **Google Workspaces**
 - Installation and preparation Atlassian products (**Jira/Confluence**) and plugins for company's development tasks and documentation articles
 - Worked with instruments for connection and trading (**FIX** protocol, trading terminals) on biggest world exchanges (NYSE, NASDAQ, LSE, etc.)
 - Temporary led OPS team
 
 `Sep, 2011 - Nov, 2018`
-### Moscow Center for Pedagogical Excellence
+### Center of pedagogical skills
 > IT support, Network Engineer (IT team)
 
 - Managed **Linux/Windows** servers and all center's workstation (**Windows/Mac**)
