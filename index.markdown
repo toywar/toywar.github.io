@@ -22,7 +22,7 @@ LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://w
 
 ## Experience
 ---
-`June, 2021 - present`
+`June, 2021 - October, 2022`
 ### [Tinkoff Bank](https://www.tinkoff.ru/en) - Russian bank in TOP-10
 > DevOps Engineer, SRE (Processing Systems Infrastructure team)
 
