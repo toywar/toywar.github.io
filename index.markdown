@@ -6,7 +6,8 @@ layout: page
 ---
 ![](photo.png)  
 Email: [roman.ekimov@gmail.com](mailto:roman.ekimov@gmail.com)  
-Mobile phone/Telegram: +381645124503  
+Mobile phone: +381645124503  
+Telegram: @toywar  
 Location: Belgrade, Serbia  
 LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://www.linkedin.com/in/roman-ekimov-03b23298/)
 
