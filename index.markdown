@@ -6,7 +6,6 @@ layout: page
 ---
 ![](photo.png)  
 Email: [roman.ekimov@gmail.com](mailto:roman.ekimov@gmail.com)  
-Mobile phone: +381645124503  
 Telegram: @toywar  
 Location: Belgrade, Serbia  
 LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://www.linkedin.com/in/roman-ekimov-03b23298/)
@@ -24,7 +23,16 @@ LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://w
 
 ## Experience
 ---
-`November, 2022 - present`
+`August, 2024 - present`
+### [Finharbor](https://finharbor.io) - Fintech integrations
+> DevOps Engineer
+
+- Supporting and improving **Cloud**-based infrastructure (Google Cloud Platform/Servercore) and some **docker-compose** solutions in various of infrastructure (bare-metral/VM)
+- Supporting and creating **IaC** for fintech-project in GCP **Terraform/Helm/Ansible/Packer**
+- Creating CI/CD pipelines in **GitlabCI**, manifests (**Helm**) for deploy **Java/Kotlin/JavaScript/Rust/Go** applications in cloud **Kubernetes** clusters
+- Infrastructure monitoring and implementation SRE practices for stable work
+
+`November, 2022 - August, 2024`
 ### [Blockchain Family](https://bf.rocks) - Blockchain integrations
 > DevOps Engineer (Fintech team)
 
