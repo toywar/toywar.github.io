@@ -33,7 +33,7 @@ LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://w
 - Infrastructure monitoring and implementation SRE practices for stable work
 
 `November, 2022 - August, 2024`
-### [Blockchain Family](https://bf.rocks) - Blockchain integrations
+### Blockchain Family - Blockchain integrations
 > DevOps Engineer (Fintech team)
 
 - Supporting and improving **Cloud**-based infrastructure (Google Cloud Platform) and some **docker-compose** solutions in various of infrastructure (bare-metral/VM)
