@@ -15,21 +15,24 @@ LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://w
 - Experience in Linux OS family (Ubuntu/Debian/RHEL/CentOS)
 - Bare-metal/VM management (Ansible/Chef)
 - Containerization (Docker/docker-compose)
-- Containers orchestration (Kubernetes/Docker Swarm)
-- Cloud solutions (AWS/GCP/Yandex.Cloud)
+- Containers orchestration (Kubernetes/Docker Swarm/Nomad)
+- Cloud solutions (AWS/GCP/Yandex.Cloud/Servercore)
 - Continuous Integration and Delivery (GilabCI/Jenkins)
-- Monitoring tools (Prometheus/ELK/Zabbix)
+- Security (HashiCorp Vault)
+- Monitoring tools (Prometheus stack/Grafana stack/ELK/Zabbix)
+- Experience in SRE practices and tools
 - Golang/Bash (create tools for automatization and monitoring)
 
 ## Experience
 ---
 `August, 2024 - present`
-### [Finharbor](https://finharbor.io) - Fintech integrations
+### [Finharbor](https://finharbor.io) - Fintech company
 > DevOps Engineer
 
 - Supporting and improving **Cloud**-based infrastructure (Google Cloud Platform/Servercore) and some **docker-compose** solutions in various of infrastructure (bare-metral/VM)
 - Supporting and creating **IaC** for fintech-project in GCP **Terraform/Helm/Ansible/Packer**
 - Creating CI/CD pipelines in **GitlabCI**, manifests (**Helm**) for deploy **Java/Kotlin/JavaScript/Rust/Go** applications in cloud **Kubernetes** clusters
+- Participating PCI DSS audit process
 - Infrastructure monitoring and implementation SRE practices for stable work
 
 `November, 2022 - August, 2024`
@@ -43,7 +46,7 @@ LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://w
 - Infrastructure monitoring and implementation SRE practices for stable work
 
 `June, 2021 - October, 2022`
-### [Tinkoff Bank](https://www.tinkoff.ru/en) - Russian bank in TOP-10
+### [Tinkoff Bank](https://www.tbank.ru) - Russian bank in TOP-10
 > DevOps Engineer, SRE (Processing Systems Infrastructure team)
 
 - Supporting and improving **Linux**-based infrastructure (RHEL/CentOS/Ubuntu)
