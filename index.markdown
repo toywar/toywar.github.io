@@ -13,11 +13,11 @@ LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://w
 ## Specialties:
 ---
 - Experience in Linux OS family (Ubuntu/Debian/RHEL/CentOS)
-- Bare-metal/VM management (Ansible/Chef)
+- Bare-metal/VM/Cloud management (Terraform/OpenTofu/Ansible/Chef)
 - Containerization (Docker/docker-compose)
 - Containers orchestration (Kubernetes/Docker Swarm/Nomad)
 - Cloud solutions (AWS/GCP/Yandex.Cloud/Servercore)
-- Continuous Integration and Delivery (GilabCI/Jenkins)
+- Continuous Integration and Delivery (GilabCI/ArgoCD/Jenkins)
 - Security (HashiCorp Vault)
 - Monitoring tools (Prometheus stack/Grafana stack/ELK/Zabbix)
 - Experience in SRE practices and tools
@@ -30,7 +30,7 @@ LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://w
 > DevOps Engineer
 
 - Supporting and improving **Cloud**-based infrastructure (Google Cloud Platform/Servercore) and some **docker-compose** solutions in various of infrastructure (bare-metral/VM)
-- Supporting and creating **IaC** for fintech-project in GCP **Terraform/Helm/Ansible/Packer**
+- Supporting and creating **IaC** for fintech-project in GCP **Terraform/Helm/ArgoCD/Ansible/Packer**
 - Creating CI/CD pipelines in **GitlabCI**, manifests (**Helm**) for deploy **Java/Kotlin/JavaScript/Rust/Go** applications in cloud **Kubernetes** clusters
 - Participating PCI DSS audit process
 - Infrastructure monitoring and implementation SRE practices for stable work
