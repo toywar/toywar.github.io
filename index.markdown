@@ -19,7 +19,10 @@ LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://w
 - Cloud solutions (AWS/GCP/Yandex.Cloud/Servercore)
 - Continuous Integration and Delivery (GilabCI/ArgoCD/Jenkins)
 - Security (HashiCorp Vault)
-- Monitoring tools (Prometheus stack/Grafana stack/ELK/Zabbix)
+- Brokers (Apache Kafka/Cloud broker solutions)
+- Nginx/HAProxy
+- PostgreSQL/Clickhouse/MongoDB/Redis
+- Monitoring tools (Prometheus stack/Victoria metrics/Grafana stack/ELK/Zabbix)
 - Experience in SRE practices and tools
 - Golang/Bash (create tools for automatization and monitoring)
 
