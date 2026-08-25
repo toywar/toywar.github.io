@@ -2,7 +2,7 @@ name: Roman Ekimov
 headline: "DevOps Lead & Senior SRE / Infrastructure Engineer"
 status_badge: "Available for DevOps Lead & SRE Roles"
 bio: >-
-  12+ years designing, automating, and operating mission-critical multi-cloud infrastructure for fintech, high-frequency trading, and high-load banking platforms. Specialized in Kubernetes, Infrastructure as Code, CI/CD GitOps, FinOps cost reduction, and SRE reliability engineering.
+  15+ years designing, automating, and operating mission-critical multi-cloud infrastructure for fintech, high-frequency trading, and high-load banking platforms. Specialized in Kubernetes, Infrastructure as Code, CI/CD GitOps, FinOps cost reduction, and SRE reliability engineering.
 email: roman.ekimov@gmail.com
 telegram: toywar
 telegram_url: "https://t.me/toywar"
@@ -15,7 +15,7 @@ avatar_image: "/photo.png"
 avatar_badge: "DevOps Lead"
 
 stats:
-  - value: "12"
+  - value: "15"
     suffix: "+"
     label: "Years of Experience"
   - value: "-30"
