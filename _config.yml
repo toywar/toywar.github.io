@@ -24,4 +24,5 @@ exclude:
   - vendor/
   - public/
   - generate_pdf.py
+  - SUGGESTIONS.md
   - .vscode/
