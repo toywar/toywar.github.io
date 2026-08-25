@@ -5,7 +5,6 @@ description: >-
 baseurl: ""
 url: "https://toywar.ru"
 twitter_username: toywar
-github_username: toywar
 
 markdown: kramdown
 plugins:
