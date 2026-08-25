@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://toywar.github.io/sitemap.xml
+Sitemap: https://toywar.ru/sitemap.xml
