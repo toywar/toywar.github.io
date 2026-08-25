@@ -27,6 +27,12 @@ with open(os.path.join(data_dir, "experience.yml"), "r", encoding="utf-8") as f:
 with open(os.path.join(data_dir, "education.yml"), "r", encoding="utf-8") as f:
     education = yaml.safe_load(f)
 
+languages_path = os.path.join(data_dir, "languages.yml")
+languages = []
+if os.path.exists(languages_path):
+    with open(languages_path, "r", encoding="utf-8") as f:
+        languages = yaml.safe_load(f) or []
+
 # Load Photo
 with open(photo_path, "rb") as f:
     photo_b64 = base64.b64encode(f.read()).decode("utf-8")
@@ -84,6 +90,15 @@ for edu in education:
       </div>
       <div class="edu-date">{edu['years']}</div>
     </div>"""
+
+# Build Languages HTML (single compact line under Education)
+languages_html = ""
+if languages:
+    joined = " &nbsp;•&nbsp; ".join(
+        f"<strong>{lang['language']}</strong> — {lang['level']}" for lang in languages
+    )
+    languages_html = f"""
+    <div class="lang-line"><span class="lang-label">Languages:</span> {joined}</div>"""
 
 html_content = f"""<!DOCTYPE html>
 <html lang="en">
@@ -179,11 +194,11 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .section {{
-    margin-bottom: 11px;
+    margin-bottom: 9px;
   }}
 
   .section-title {{
-    font-size: 10.5pt;
+    font-size: 10pt;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.8px;
@@ -223,7 +238,7 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .exp-item {{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     break-inside: avoid;
     page-break-inside: avoid;
   }}
@@ -267,10 +282,10 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .exp-bullets li {{
-    font-size: 8.5pt;
+    font-size: 8.4pt;
     color: #334155;
-    margin-bottom: 2.5px;
-    line-height: 1.34;
+    margin-bottom: 2px;
+    line-height: 1.3;
   }}
 
   .exp-bullets li strong {{
@@ -303,6 +318,23 @@ html_content = f"""<!DOCTYPE html>
     font-weight: 600;
     color: #64748b;
   }}
+
+  .lang-line {{
+    font-size: 8.8pt;
+    color: #334155;
+    margin-top: 7px;
+    padding-top: 6px;
+    border-top: 1px solid #e2e8f0;
+  }}
+
+  .lang-label {{
+    font-weight: 700;
+    color: #0f172a;
+  }}
+
+  .lang-line strong {{
+    color: #0f172a;
+  }}
 </style>
 </head>
 <body>
@@ -322,6 +354,10 @@ html_content = f"""<!DOCTYPE html>
           {profile['location']}
         </div>
         <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1.2 15L7 12.2l1.4-1.4 2.4 2.4 5-5L17.2 9.6 10.8 16z"/></svg>
+          {profile.get('work_authorization', '')}
+        </div>
+        <div class="contact-item">
           <svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5 0.71L12.6 15.9l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
           <a href="{profile['telegram_url']}">@{profile['telegram']}</a>
         </div>
@@ -335,7 +371,7 @@ html_content = f"""<!DOCTYPE html>
         </div>
         <div class="contact-item">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-          <a href="https://toywar.github.io">toywar.github.io</a>
+          <a href="https://toywar.ru">toywar.ru</a>
         </div>
       </div>
     </div>
@@ -369,6 +405,7 @@ html_content = f"""<!DOCTYPE html>
       Education
     </div>
     {education_html}
+    {languages_html}
   </div>
 
 </body>

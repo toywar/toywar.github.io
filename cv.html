@@ -92,11 +92,11 @@
   }
 
   .section {
-    margin-bottom: 11px;
+    margin-bottom: 9px;
   }
 
   .section-title {
-    font-size: 10.5pt;
+    font-size: 10pt;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.8px;
@@ -136,7 +136,7 @@
   }
 
   .exp-item {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     break-inside: avoid;
     page-break-inside: avoid;
   }
@@ -180,10 +180,10 @@
   }
 
   .exp-bullets li {
-    font-size: 8.5pt;
+    font-size: 8.4pt;
     color: #334155;
-    margin-bottom: 2.5px;
-    line-height: 1.34;
+    margin-bottom: 2px;
+    line-height: 1.3;
   }
 
   .exp-bullets li strong {
@@ -216,6 +216,23 @@
     font-weight: 600;
     color: #64748b;
   }
+
+  .lang-line {
+    font-size: 8.8pt;
+    color: #334155;
+    margin-top: 7px;
+    padding-top: 6px;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .lang-label {
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  .lang-line strong {
+    color: #0f172a;
+  }
 </style>
 </head>
 <body>
@@ -235,6 +252,10 @@
           Belgrade, Serbia
         </div>
         <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1.2 15L7 12.2l1.4-1.4 2.4 2.4 5-5L17.2 9.6 10.8 16z"/></svg>
+          Serbian permanent residence (stalno nastanjenje) • Russian citizen
+        </div>
+        <div class="contact-item">
           <svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5 0.71L12.6 15.9l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
           <a href="https://t.me/toywar">@toywar</a>
         </div>
@@ -248,7 +269,7 @@
         </div>
         <div class="contact-item">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-          <a href="https://toywar.github.io">toywar.github.io</a>
+          <a href="https://toywar.ru">toywar.ru</a>
         </div>
       </div>
     </div>
@@ -316,7 +337,7 @@
       <ul class="exp-bullets">
         <li><strong>Function Ownership & Technical Leadership:</strong> End-to-end owner of the DevOps & infrastructure function — technical roadmap, sprint planning, and prioritization — leading infrastructure workstreams together with the backend, security, and product teams; onboarded and mentored a DevOps engineer and codified runbooks, on-call, and IaC standards so practices outlive individuals.</li>
 <li><strong>Infrastructure Strategy & Architecture:</strong> Driving infrastructure architecture for fintech microservices, ensuring high availability, disaster recovery, and compliance readiness.</li>
-<li><strong>Flagship Delivery — Asterium (Uzbekistan):</strong> Led the infrastructure workstream behind the hybrid neobank & digital-asset platform delivered for <strong><a href="https://asterium.uz">Asterium</a></strong>: environment topology, regional hosting and data residency, capacity planning, and production go-live readiness for banking, card issuing, crypto-wallet, and KYC/AML services under Uzbekistan's NAPP-regulated framework.</li>
+<li><strong>Flagship Delivery — Asterium (Uzbekistan):</strong> Led the infrastructure workstream behind the hybrid neobank & digital-asset platform delivered for <strong><a href="https://asterium.uz">Asterium</a></strong>: environment topology, regional hosting and data residency, capacity planning, and production go-live readiness across the platform's full IT estate — core banking, card issuing, the exchange, and KYC/AML services — under Uzbekistan's NAPP-regulated framework.</li>
 <li><strong>PCI DSS & Security Governance:</strong> Owning the infrastructure side of <strong>PCI DSS</strong> compliance — maintaining certified scope and network segmentation, secret & key management (<strong>HashiCorp Vault / OpenBao</strong>), centralized audit logging, periodic access reviews, and evidence collection for annual re-certification audits.</li>
 <li><strong>FinOps & Cost Reduction:</strong> Reduced company infrastructure operational expenses by up to <strong>30%</strong> through workload rightsizing, architecture optimization, committed-use discounts, and resource cleanup across cloud providers.</li>
 <li><strong>Client & Partner Engagement:</strong> Directly communicating with enterprise clients and partners regarding infrastructure integrations, security requirements, disaster recovery, and SLA guarantees.</li>
@@ -337,7 +358,7 @@
         <li><strong>Multi-Cloud & Hybrid Infrastructure:</strong> Designed, deployed, and scaled multi-cloud infrastructure across <strong>Google Cloud Platform (GCP)</strong>, <strong>Servercore</strong>, and <strong>DigitalOcean</strong>, alongside bare-metal and VM environments.</li>
 <li><strong>Infrastructure as Code:</strong> Implemented and managed IaC using <strong>Terraform, OpenTofu, Helm, ArgoCD, Ansible, and Packer</strong> for fintech microservices.</li>
 <li><strong>CI/CD & GitOps:</strong> Built automated CI/CD pipelines in <strong>GitLab CI</strong> and GitOps workflows via <strong>ArgoCD</strong>, creating <strong>Helm</strong> charts to deploy polyglot microservices (<strong>Java, Kotlin, JavaScript/TypeScript, Rust, Go</strong>) into cloud <strong>Kubernetes (GKE)</strong> clusters.</li>
-<li><strong>Asterium Platform Build-Out (Uzbekistan):</strong> Delivered the cloud infrastructure for the <strong><a href="https://asterium.uz">Asterium</a></strong> hybrid neobank & digital-asset platform — provisioned multi-environment <strong>Kubernetes</strong> landing zones with <strong>Terraform, Helm, and ArgoCD</strong>, plus CI/CD pipelines, secret management, and observability for its banking, crypto-wallet, and KYC/AML/KYT microservices.</li>
+<li><strong>Asterium Platform Build-Out (Uzbekistan):</strong> Delivered the cloud infrastructure for the <strong><a href="https://asterium.uz">Asterium</a></strong> hybrid neobank & digital-asset platform — provisioned multi-environment <strong>Kubernetes</strong> landing zones with <strong>Terraform, Helm, and ArgoCD</strong>, plus CI/CD pipelines, secret management, and observability for the platform's entire service estate — core banking, card issuing, exchange, and KYC/AML/KYT microservices.</li>
 <li><strong>PCI DSS Compliance:</strong> Participated in the PCI DSS audit and certification process: enforced infrastructure security controls, network isolation, audit logging, and secret management using <strong>HashiCorp Vault / OpenBao</strong>.</li>
 <li><strong>Observability & SRE:</strong> Designed and maintained comprehensive observability and monitoring stacks (<strong>Prometheus, VictoriaMetrics, Grafana</strong>), implementing SRE practices to ensure 99.99% uptime for core financial services.</li>
 <li><strong>Data Stores & Streaming:</strong> Managed and tuned data stores and streaming platforms including <strong>PostgreSQL, Redis, and Apache Kafka</strong> for low-latency transaction processing.</li>
@@ -430,6 +451,8 @@
       </div>
       <div class="edu-date">2007 – 2012</div>
     </div>
+    
+    <div class="lang-line"><span class="lang-label">Languages:</span> <strong>Russian</strong> — Native &nbsp;•&nbsp; <strong>English</strong> — Upper-Intermediate (B2) &nbsp;•&nbsp; <strong>Serbian</strong> — Conversational</div>
   </div>
 
 </body>
