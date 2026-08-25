@@ -5,7 +5,7 @@
   current: true
   tagline: "Fintech company providing global payment and financial infrastructure"
   bullets:
-    - "**Team Leadership & Roadmaps:** Leading and mentoring the DevOps & infrastructure engineering team; managing sprint planning, task prioritization, and technical roadmaps."
+    - "**Function Ownership & Technical Leadership:** End-to-end owner of the DevOps & infrastructure function — technical roadmap, sprint planning, and prioritization — leading infrastructure workstreams together with the backend, security, and product teams; onboarded and mentored a DevOps engineer and codified runbooks, on-call, and IaC standards so practices outlive individuals."
     - "**Infrastructure Strategy & Architecture:** Driving infrastructure architecture for fintech microservices, ensuring high availability, disaster recovery, and compliance readiness."
     - "**Flagship Delivery — Asterium (Uzbekistan):** Led the infrastructure workstream behind the hybrid neobank & digital-asset platform delivered for **[Asterium](https://asterium.uz)**: environment topology, regional hosting and data residency, capacity planning, and production go-live readiness for banking, card issuing, crypto-wallet, and KYC/AML services under Uzbekistan's NAPP-regulated framework."
     - "**PCI DSS & Security Governance:** Owning the infrastructure side of **PCI DSS** compliance — maintaining certified scope and network segmentation, secret & key management (**HashiCorp Vault / OpenBao**), centralized audit logging, periodic access reviews, and evidence collection for annual re-certification audits."
@@ -14,7 +14,7 @@
     - "**Process Standardization:** Standardizing GitOps, CI/CD, and IaC practices across engineering squads to accelerate product release velocity and ensure deployment consistency."
     - "**Incident & SRE Governance:** Establishing on-call schedules, incident response protocols, and postmortem workflows to maintain high reliability."
   tech_tags:
-    - "Team Leadership"
+    - "Technical Leadership"
     - "FinOps (-30%)"
     - "GCP"
     - "Kubernetes"
