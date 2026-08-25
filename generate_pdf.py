@@ -104,6 +104,8 @@ html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{profile['name']} — {profile['headline']}. Full CV.">
 <title>{profile['name']} - CV</title>
 <style>
   @page {{
@@ -334,6 +336,34 @@ html_content = f"""<!DOCTYPE html>
 
   .lang-line strong {{
     color: #0f172a;
+  }}
+
+  @media screen and (max-width: 640px) {{
+    body {{
+      font-size: 10.5pt;
+      padding: 14px;
+    }}
+
+    .header {{
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 12px;
+    }}
+
+    .skills-grid {{
+      grid-template-columns: 1fr;
+    }}
+
+    .exp-header {{
+      flex-direction: column;
+      align-items: flex-start;
+    }}
+
+    .edu-item {{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+    }}
   }}
 </style>
 </head>

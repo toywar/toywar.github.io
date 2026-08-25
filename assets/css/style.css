@@ -970,6 +970,22 @@ body::after {
   color: var(--text-primary);
 }
 
+/* Hero: secondary route to the HTML CV */
+.hero-alt-link {
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.hero-alt-link a {
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+}
+
+.hero-alt-link a:hover {
+  border-bottom-color: var(--accent-primary);
+}
+
 /* Languages card (shares the education card shell) */
 .lang-card {
   margin-top: 1rem;

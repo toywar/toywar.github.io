@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Roman Ekimov — DevOps Lead & Senior SRE / Infrastructure Engineer. Full CV.">
 <title>Roman Ekimov - CV</title>
 <style>
   @page {
@@ -232,6 +234,34 @@
 
   .lang-line strong {
     color: #0f172a;
+  }
+
+  @media screen and (max-width: 640px) {
+    body {
+      font-size: 10.5pt;
+      padding: 14px;
+    }
+
+    .header {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .exp-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .edu-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+    }
   }
 </style>
 </head>
