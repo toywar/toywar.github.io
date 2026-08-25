@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://toywar.github.io/sitemap.xml
