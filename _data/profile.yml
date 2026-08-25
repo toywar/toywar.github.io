@@ -17,7 +17,7 @@ stats:
   - value: "15"
     suffix: "+"
     label: "Years of Experience"
-  - value: "-27"
+  - value: "-30"
     suffix: "%"
     label: "Infrastructure Cost"
   - value: "99.99"
