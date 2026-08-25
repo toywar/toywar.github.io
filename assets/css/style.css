@@ -970,6 +970,48 @@ body::after {
   color: var(--text-primary);
 }
 
+/* Languages card (shares the education card shell) */
+.lang-card {
+  margin-top: 1rem;
+  align-items: flex-start;
+}
+
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.lang-item {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+}
+
+.lang-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 84px;
+}
+
+.lang-level {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: var(--radius-sm);
+  background: var(--badge-bg);
+  border: 1px solid var(--badge-border);
+  color: var(--badge-text);
+}
+
+.lang-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
 /* --------------------------------------------------------------------------
    Responsive Breakpoints
    -------------------------------------------------------------------------- */

@@ -8,9 +8,8 @@ telegram: toywar
 telegram_url: "https://t.me/toywar"
 linkedin: "roman-ekimov"
 linkedin_url: "https://www.linkedin.com/in/roman-ekimov-03b23298/"
-github: toywar
-github_url: "https://github.com/toywar"
 location: "Belgrade, Serbia"
+work_authorization: "Serbian permanent residence (stalno nastanjenje) • Russian citizen"
 avatar_image: "/photo.png"
 avatar_badge: "DevOps Lead"
 
@@ -18,7 +17,7 @@ stats:
   - value: "15"
     suffix: "+"
     label: "Years of Experience"
-  - value: "-30"
+  - value: "-27"
     suffix: "%"
     label: "Infrastructure Cost"
   - value: "99.99"
