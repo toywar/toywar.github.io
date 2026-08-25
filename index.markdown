@@ -18,21 +18,30 @@ LinkedIn profile: [https://www.linkedin.com/in/roman-ekimov-03b23298/](https://w
 - Containers orchestration (Kubernetes/Docker Swarm/Nomad)
 - Cloud solutions (AWS/GCP/Yandex.Cloud/Servercore)
 - Continuous Integration and Delivery (GilabCI/ArgoCD/Jenkins)
-- Security (HashiCorp Vault)
+- Security (HashiCorp Vault/OpenBao)
 - Brokers (Apache Kafka/Cloud broker solutions)
 - Nginx/HAProxy
 - PostgreSQL/Clickhouse/MongoDB/Redis
-- Monitoring tools (Prometheus stack/Victoria metrics/Grafana stack/ELK/Zabbix)
+- Monitoring tools (Prometheus/VictoriaMetrics/Grafana/ELK/Zabbix)
 - Experience in SRE practices and tools
 - Golang/Bash (create tools for automatization and monitoring)
 
 ## Experience
 ---
-`August, 2024 - present`
+`Januar, 2026 - present`
+### [Finharbor](https://finharbor.io) - Fintech company
+> DevOps Lead
+
+- Leading of DevOps team
+- Planning new project and tasks
+- Decrease company infrastructure costs up to 30%
+- Communication with clients about infrastructure issues and improvements
+
+`August, 2024 - December, 2025`
 ### [Finharbor](https://finharbor.io) - Fintech company
 > DevOps Engineer
 
-- Supporting and improving **Cloud**-based infrastructure (Google Cloud Platform/Servercore) and some **docker-compose** solutions in various of infrastructure (bare-metral/VM)
+- Supporting and improving **Cloud**-based infrastructure (Google Cloud Platform/Servercore/Digital Ocean) and some **docker-compose** solutions in various of infrastructure (bare-metral/VM)
 - Supporting and creating **IaC** for fintech-project in GCP **Terraform/Helm/ArgoCD/Ansible/Packer**
 - Creating CI/CD pipelines in **GitlabCI**, manifests (**Helm**) for deploy **Java/Kotlin/JavaScript/Rust/Go** applications in cloud **Kubernetes** clusters
 - Participating PCI DSS audit process
