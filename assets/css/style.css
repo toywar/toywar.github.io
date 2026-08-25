@@ -1044,3 +1044,37 @@ p:last-child {
     text-align: center;
   }
 }
+
+/* Very small screens: keep the nav bar on a single line */
+@media (max-width: 480px) {
+  .nav-brand {
+    font-size: 0.95rem;
+  }
+
+  .brand-name {
+    white-space: nowrap;
+  }
+
+  .cv-btn span {
+    display: none;
+  }
+
+  .cv-btn {
+    padding: 0.5rem;
+  }
+}
+
+/* Accessibility: honour reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

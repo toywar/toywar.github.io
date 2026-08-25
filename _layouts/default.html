@@ -7,11 +7,45 @@
   <title>{{ page.title | default: site.title | default: "Roman Ekimov" }} | DevOps Lead & SRE</title>
   
   <meta name="description" content="Roman Ekimov - DevOps Lead & Senior SRE / Infrastructure Engineer. Multi-cloud, Kubernetes, IaC, GitOps, CI/CD, and FinOps leader based in Belgrade, Serbia.">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Roman Ekimov">
   <meta property="og:title" content="Roman Ekimov | DevOps Lead & Senior SRE">
   <meta property="og:description" content="DevOps Lead & Senior SRE / Infrastructure Engineer. Multi-cloud, Kubernetes, IaC, GitOps, CI/CD, and FinOps leader.">
-  <meta property="og:image" content="{{ '/photo.png' | relative_url }}">
-  <meta property="og:url" content="{{ site.url }}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="{{ '/photo.png' | absolute_url }}">
+  <meta property="og:image:alt" content="Portrait of Roman Ekimov">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% if site.twitter_username %}<meta name="twitter:creator" content="@{{ site.twitter_username }}">{% endif %}
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+  <!-- Favicon (inline SVG: terminal prompt mark) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230284c7'/%3E%3Cpath d='M8 10l5 6-5 6' stroke='%23fff' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.5 22h8' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="{{ '/photo.png' | relative_url }}">
+
+  <!-- Structured Data (schema.org Person) -->
+  {% assign profile = site.data.profile %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ profile.name | jsonify }},
+    "jobTitle": {{ profile.headline | jsonify }},
+    "description": {{ profile.bio | strip_newlines | jsonify }},
+    "email": {{ profile.email | prepend: "mailto:" | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "image": {{ '/photo.png' | absolute_url | jsonify }},
+    "address": { "@type": "PostalAddress", "addressLocality": "Belgrade", "addressCountry": "RS" },
+    "sameAs": [
+      {{ profile.linkedin_url | jsonify }},
+      {{ profile.github_url | jsonify }},
+      {{ profile.telegram_url | jsonify }}
+    ],
+    "knowsAbout": ["DevOps", "Site Reliability Engineering", "Kubernetes", "Terraform", "GitOps", "FinOps", "PCI DSS", "Multi-Cloud Infrastructure"],
+    "worksFor": { "@type": "Organization", "name": "Finharbor", "url": "https://finharbor.io" }
+  }
+  </script>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,10 +56,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   <script>
-    // Immediate Theme Initialization (Dark mode default)
+    // Immediate Theme Initialization (saved choice, else OS preference, else dark)
     (function() {
-      const savedTheme = localStorage.getItem('theme');
-      const theme = savedTheme || 'dark';
+      let savedTheme = null;
+      try { savedTheme = localStorage.getItem('theme'); } catch (e) { /* storage blocked */ }
+      const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      const theme = savedTheme || (prefersLight ? 'light' : 'dark');
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
@@ -50,8 +86,8 @@
       </div>
 
       <div class="nav-actions">
-        <a href="{{ '/Roman_Ekimov_CV.pdf' | relative_url }}" class="btn btn-outline btn-sm cv-btn" download>
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <a href="{{ '/Roman_Ekimov_CV.pdf' | relative_url }}" class="btn btn-outline btn-sm cv-btn" download aria-label="Download CV (PDF)" title="Download CV (PDF)">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
             <polyline points="7 10 12 15 17 10"/>
             <line x1="12" y1="15" x2="12" y2="3"/>
@@ -59,8 +95,8 @@
           <span>CV (PDF)</span>
         </a>
 
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
-          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme" aria-pressed="false">
+          <svg class="sun-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -71,12 +107,12 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="moon-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
 
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
           <span></span>
           <span></span>
           <span></span>
@@ -109,19 +145,23 @@
   <script>
     // Theme toggle handler
     const themeToggleBtn = document.getElementById('theme-toggle');
+    themeToggleBtn.setAttribute('aria-pressed',
+      String(document.documentElement.getAttribute('data-theme') === 'light'));
     themeToggleBtn.addEventListener('click', () => {
       const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
+      themeToggleBtn.setAttribute('aria-pressed', String(newTheme === 'light'));
+      try { localStorage.setItem('theme', newTheme); } catch (e) { /* storage blocked */ }
     });
 
     // Mobile nav toggle
     const mobileToggle = document.getElementById('mobile-toggle');
     const navLinks = document.getElementById('nav-links');
     mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
+      const open = navLinks.classList.toggle('open');
       mobileToggle.classList.toggle('active');
+      mobileToggle.setAttribute('aria-expanded', String(open));
     });
 
     // Close mobile nav on click
@@ -129,27 +169,27 @@
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
         mobileToggle.classList.remove('active');
+        mobileToggle.setAttribute('aria-expanded', 'false');
       });
     });
 
-    // Active link highlighting on scroll
+    // Active link highlighting (IntersectionObserver: no layout thrash on scroll)
     const sections = document.querySelectorAll('section[id]');
-    window.addEventListener('scroll', () => {
-      const scrollY = window.pageYOffset;
-      sections.forEach(current => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 100;
-        const sectionId = current.getAttribute('id');
-        const navItem = document.querySelector(`.nav-links a[href*=${sectionId}]`);
-        if (navItem) {
-          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            navItem.classList.add('active');
-          } else {
-            navItem.classList.remove('active');
-          }
-        }
-      });
+    const navItems = new Map();
+    sections.forEach(section => {
+      const item = document.querySelector(`.nav-links a[href="#${section.id}"]`);
+      if (item) navItems.set(section, item);
     });
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const item = navItems.get(entry.target);
+          if (item) item.classList.toggle('active', entry.isIntersecting);
+        });
+      }, { rootMargin: '-45% 0px -45% 0px' });
+      sections.forEach(section => observer.observe(section));
+    }
   </script>
 </body>
 </html>

@@ -10,6 +10,9 @@ github_username: toywar
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+
+lang: en
 
 exclude:
   - .sass-cache/
@@ -20,3 +23,5 @@ exclude:
   - node_modules/
   - vendor/
   - public/
+  - generate_pdf.py
+  - .vscode/

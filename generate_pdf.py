@@ -179,7 +179,7 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .section {{
-    margin-bottom: 14px;
+    margin-bottom: 11px;
   }}
 
   .section-title {{
@@ -223,7 +223,7 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .exp-item {{
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     break-inside: avoid;
     page-break-inside: avoid;
   }}
@@ -267,10 +267,10 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .exp-bullets li {{
-    font-size: 8.8pt;
+    font-size: 8.5pt;
     color: #334155;
-    margin-bottom: 3.5px;
-    line-height: 1.38;
+    margin-bottom: 2.5px;
+    line-height: 1.34;
   }}
 
   .exp-bullets li strong {{
@@ -380,8 +380,33 @@ with open(html_path, "w", encoding="utf-8") as f:
 
 print(f"Rendered HTML to {html_path}")
 
+def find_chrome():
+    """Locate a Chrome/Chromium binary (env override, PATH, then common install paths)."""
+    import glob
+    import shutil
+
+    env_bin = os.environ.get("CHROME_BIN")
+    if env_bin and os.path.exists(env_bin):
+        return env_bin
+
+    for name in ("google-chrome", "google-chrome-stable", "chromium", "chromium-browser"):
+        found = shutil.which(name)
+        if found:
+            return found
+
+    patterns = [
+        "/opt/pw-browsers/chromium-*/chrome-linux/chrome",
+        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    ]
+    for pattern in patterns:
+        matches = sorted(glob.glob(pattern))
+        if matches:
+            return matches[-1]
+
+    raise SystemExit("No Chrome/Chromium binary found. Set CHROME_BIN to one.")
+
 cmd = [
-    "google-chrome",
+    find_chrome(),
     "--headless=new",
     "--disable-gpu",
     "--no-sandbox",
