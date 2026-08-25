@@ -196,7 +196,7 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .section {{
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }}
 
   .section-title {{
@@ -226,8 +226,8 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .skill-group {{
-    font-size: 8.5pt;
-    line-height: 1.35;
+    font-size: 8.3pt;
+    line-height: 1.3;
   }}
 
   .skill-name {{
@@ -240,7 +240,27 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .exp-item {{
-    margin-bottom: 8px;
+    margin-bottom: 6.5px;
+  }}
+
+  /* A role may split across pages, but never right after its heading,
+     and never leaving a single bullet stranded. */
+  .exp-header {{
+    break-after: avoid;
+    page-break-after: avoid;
+  }}
+
+  .exp-tagline {{
+    break-after: avoid;
+    page-break-after: avoid;
+  }}
+
+  .exp-bullets {{
+    orphans: 2;
+    widows: 2;
+  }}
+
+  .exp-bullets li {{
     break-inside: avoid;
     page-break-inside: avoid;
   }}
@@ -284,10 +304,10 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .exp-bullets li {{
-    font-size: 8.4pt;
+    font-size: 8.3pt;
     color: #334155;
-    margin-bottom: 2px;
-    line-height: 1.3;
+    margin-bottom: 1.5px;
+    line-height: 1.27;
   }}
 
   .exp-bullets li strong {{
@@ -322,6 +342,8 @@ html_content = f"""<!DOCTYPE html>
   }}
 
   .lang-line {{
+    break-inside: avoid;
+    page-break-inside: avoid;
     font-size: 8.8pt;
     color: #334155;
     margin-top: 7px;
@@ -425,7 +447,7 @@ html_content = f"""<!DOCTYPE html>
   </div>
 
   <!-- Education -->
-  <div class="section" style="break-inside: avoid; page-break-inside: avoid;">
+  <div class="section">
     <div class="section-title">
       <svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
       Education

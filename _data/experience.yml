@@ -11,6 +11,7 @@
     - "**PCI DSS & Security Governance:** Owning the infrastructure side of **PCI DSS** compliance — maintaining certified scope and network segmentation, secret & key management (**HashiCorp Vault / OpenBao**), centralized audit logging, periodic access reviews, and evidence collection for annual re-certification audits."
     - "**FinOps & Cost Reduction:** Cut the monthly cloud bill from **~$11K to ~$8K (-27%)** — imported every pre-existing cloud resource into **Terraform** state to get complete spend visibility, then decommissioned orphaned resources, right-sized **Kubernetes** node pools, and trimmed log ingestion and retention."
     - "**Client & Partner Engagement:** Directly communicating with enterprise clients and partners regarding infrastructure integrations, security requirements, disaster recovery, and SLA guarantees."
+    - "**AI-Assisted Delivery:** Adopted AI coding agents into day-to-day infrastructure work — IaC changes, pipeline scaffolding, runbook and documentation drafts — to shorten delivery cycles on routine tasks; contributing to an internal initiative building a fleet of agents wired into the task tracker to pick up tickets and prepare changes for human review."
     - "**Process Standardization:** Standardizing GitOps, CI/CD, and IaC practices across engineering squads to accelerate product release velocity and ensure deployment consistency."
     - "**Incident & SRE Governance:** Establishing on-call schedules, incident response protocols, and postmortem workflows to maintain high reliability."
   tech_tags:
@@ -23,6 +24,7 @@
     - "SRE"
     - "PCI DSS"
     - "Neobank Platform (UZ)"
+    - "AI Agents"
 
 - role: "DevOps Engineer"
   company: "Finharbor"
