@@ -81,13 +81,14 @@
   tagline: "TOP-10 Bank & Fintech Ecosystem (Processing Systems Infrastructure Team)"
   bullets:
     - "**Core Banking Infrastructure:** Maintained and optimized enterprise **Linux (RHEL, CentOS, Ubuntu)** infrastructure supporting mission-critical 24/7 payment processing."
-    - "**Tooling in Go:** Developed custom automation, diagnostic, and monitoring utilities in **Go (Golang)** for specialized banking infrastructure metrics and operations."
+    - "**Anti-Fraud Tooling in Go:** Developed custom monitoring, diagnostic, and automation utilities in **Go (Golang)** for the bank's **anti-fraud** unit — exporting processing-system metrics and alerting signals that helped analysts spot and block fraudulent activity earlier, alongside general banking infrastructure operations."
     - "**Observability as Code:** Implemented **IaC** for enterprise observability and logging stacks (**Prometheus, ELK Stack, Zabbix**)."
     - "**CI/CD & Orchestration:** Built CI/CD pipelines (**GitLab CI, Jenkins**) and deployment manifests (**Kustomize, Helm**) for **Java, Rust, and Go** applications across on-premise and cloud **Kubernetes / Docker Swarm** clusters (bare-metal, VMs, AWS)."
     - "**Acting Team Lead & Mentoring:** Deputized for the team lead of the processing-systems infrastructure team during absences — running daily priorities and task assignment, coordinating on-call coverage and incident escalation, and representing the team in cross-department change reviews; onboarding mentor for a newly joined engineer (environment ramp-up, runbooks, first on-call rotations)."
     - "**SRE & 24/7 Operations:** Served as an **SRE** ensuring 24/7 reliability and uptime of high-load transaction processing systems (on-call rotations, SLA/SLO tracking, incident troubleshooting, and root cause postmortems)."
   tech_tags:
     - "Fintech Processing"
+    - "Anti-Fraud Tooling"
     - "24/7 SRE"
     - "Acting Lead & Mentoring"
     - "Go (Golang)"
